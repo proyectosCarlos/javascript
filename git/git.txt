@@ -1,0 +1,50 @@
+git config --global user.name "tu nombre" (entre comillas)
+git config --global user.email tu correo sin comillas
+
+indicarle a git que voy a usar vscode como editor 
+git config --global core.editor "code --wait"
+
+para ver el archivo de configuracion global 
+git config --global -e
+
+git config --global core.autocrlf true //true porque estoy en windows, si estuviera en linux tendria que poner input
+
+Lista la configuracion 
+
+Como saber en que directorio me encuentro:
+pwd
+
+ver todos los archivos incluso los ocultos:
+ls -a
+
+ignorar archivos o carpetas 
+1. creo un archivo llamado .gitignore
+2. dentro del archivo escribo el nombre de los archivos o carpetas que deseo ignorar
+ej (.env) o si es una carpeta node_modules/
+
+
+ver historial commits
+git log
+git log --oneline //para que sea mas simple
+
+
+Ramas
+para saber en que rama estoy 
+git branch
+
+para crear una nueva rama
+git checkout -b nombreRama
+
+para cambiarme de rama
+git checkout nombreRama
+
+unir ramas
+git merge rombreRama
+
+si creo una nueva rama que no esta creada en el repositoriopero quiero que igual se suba debo hacer lo siguiente
+1. me paso a la rama que voy a subir
+el git checkout -b ramaC
+2. dentro de la nueva rama 
+git push -u origin ramaC
+y listo 
+
